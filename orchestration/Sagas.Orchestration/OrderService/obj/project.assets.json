@@ -428,24 +428,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/anurag/.nuget/packages/": {}
+    "C:\\Users\\anura\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anurag/Projects/sagas-pattern/orchestration/Sagas.Orchestration/OrderService/OrderService.csproj",
+      "projectUniqueName": "C:\\anurag\\github\\sagas-pattern\\orchestration\\Sagas.Orchestration\\OrderService\\OrderService.csproj",
       "projectName": "OrderService",
-      "projectPath": "/Users/anurag/Projects/sagas-pattern/orchestration/Sagas.Orchestration/OrderService/OrderService.csproj",
-      "packagesPath": "/Users/anurag/.nuget/packages/",
-      "outputPath": "/Users/anurag/Projects/sagas-pattern/orchestration/Sagas.Orchestration/OrderService/obj/",
+      "projectPath": "C:\\anurag\\github\\sagas-pattern\\orchestration\\Sagas.Orchestration\\OrderService\\OrderService.csproj",
+      "packagesPath": "C:\\Users\\anura\\.nuget\\packages\\",
+      "outputPath": "C:\\anurag\\github\\sagas-pattern\\orchestration\\Sagas.Orchestration\\OrderService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/anurag/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\anura\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -493,7 +495,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
