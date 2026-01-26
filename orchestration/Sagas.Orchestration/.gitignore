@@ -1,0 +1,6 @@
+.idea/
+/OrderService/bin/
+/OrderService/obj/
+/PaymentService/bin/
+/PaymentService/obj/
+/.DS_Store
