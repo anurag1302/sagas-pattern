@@ -5,3 +5,5 @@
 /orchestration/Sagas.Orchestration/.vs/Sagas.Orchestration
 /orchestration/Sagas.Orchestration/OrderService/bin/Debug/net8.0
 /orchestration/Sagas.Orchestration/OrderService/obj
+/orchestration/Sagas.Orchestration/PaymentService/bin/Debug/net8.0
+/orchestration/Sagas.Orchestration/PaymentService/obj
