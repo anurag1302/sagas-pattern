@@ -23,7 +23,7 @@ namespace OrderService.Controllers
         }
 
         [HttpPost]
-        public async  Task<IActionResult> CreateOrder([FromBody] decimal? price)
+        public async  Task<IActionResult> CreateOrder([FromBody] decimal? price, CancellationToken token)
         {
             //Create order
             var order = new Order
@@ -38,7 +38,7 @@ namespace OrderService.Controllers
 
                 //process payment
                 order.Status = OrderStatus.PaymentProcessed;
-                await ProcessPayment(order);
+                await ProcessPayment(order, token);
 
 
                 //reserve inventory
@@ -61,17 +61,20 @@ namespace OrderService.Controllers
 
         }
 
-        public async Task ProcessPayment(Order order)
+        private async Task ProcessPayment(Order order, CancellationToken token)
+        {
+            var http = new HttpClient();
+            var response = await http.PostAsJsonAsync("https://localhost:5000/api/Payments", order, token);
+            response.EnsureSuccessStatusCode();
+            //await Task.CompletedTask;
+        }
+
+        private async Task ReserveInventory(Order order)
         {
             await Task.CompletedTask;
         }
 
-        public async Task ReserveInventory(Order order)
-        {
-            await Task.CompletedTask;
-        }
-
-        public async Task Rollback(Order order)
+        private async Task Rollback(Order order)
         {
             await Task.CompletedTask;
         }
