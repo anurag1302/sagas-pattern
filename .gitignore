@@ -11,3 +11,4 @@
 /orchestration/Sagas.Orchestration/PaymentService/PaymentService.csproj.user
 /orchestration/Sagas.Orchestration/InventoryService/bin/Debug/net8.0
 /orchestration/Sagas.Orchestration/InventoryService/obj
+/orchestration/Sagas.Orchestration/InventoryService/InventoryService.csproj.user
