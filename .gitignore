@@ -7,3 +7,4 @@
 /orchestration/Sagas.Orchestration/OrderService/obj
 /orchestration/Sagas.Orchestration/PaymentService/bin/Debug/net8.0
 /orchestration/Sagas.Orchestration/PaymentService/obj
+/orchestration/Sagas.Orchestration/OrderService/OrderService.csproj.user
