@@ -9,3 +9,5 @@
 /orchestration/Sagas.Orchestration/PaymentService/obj
 /orchestration/Sagas.Orchestration/OrderService/OrderService.csproj.user
 /orchestration/Sagas.Orchestration/PaymentService/PaymentService.csproj.user
+/orchestration/Sagas.Orchestration/InventoryService/bin/Debug/net8.0
+/orchestration/Sagas.Orchestration/InventoryService/obj
