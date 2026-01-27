@@ -43,7 +43,7 @@ namespace OrderService.Controllers
 
                 //reserve inventory
                 order.Status = OrderStatus.InventoryReserved;
-                await ReserveInventory(order);
+                await ReserveInventory(order, token);
 
 
                 //final stage
@@ -69,9 +69,13 @@ namespace OrderService.Controllers
             //await Task.CompletedTask;
         }
 
-        private async Task ReserveInventory(Order order)
+        private async Task ReserveInventory(Order order, CancellationToken token)
         {
-            await Task.CompletedTask;
+            var http = new HttpClient();
+            var response = await http.PostAsJsonAsync("https://localhost:6001/api/Inventory", order, token);
+            response.EnsureSuccessStatusCode();
+        
+            //await Task.CompletedTask;
         }
 
         private async Task Rollback(Order order)

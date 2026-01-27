@@ -14,6 +14,7 @@ namespace InventoryService.Controllers
             HardcodedId = Guid.NewGuid();
         }
 
+        [HttpPost]
         public IActionResult ReserveInventory([FromBody] Order order)
         {
             if(order == null)
