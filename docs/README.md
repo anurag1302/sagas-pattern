@@ -33,6 +33,7 @@ For a single-page overview of all patterns, see the root document: [MICROSERVICE
 | API Gateway | Single entry point for clients; routes and aggregates calls to backend services. | [11-api-gateway.md](11-api-gateway.md) |
 | Sync vs async messaging | When to use request/response (HTTP) vs fire-and-forget or event-driven messaging. | [12-sync-vs-async-messaging.md](12-sync-vs-async-messaging.md) |
 | Idempotent consumer | Make sure processing the same message twice doesn’t cause duplicate side effects. | [13-idempotent-consumer.md](13-idempotent-consumer.md) |
+| Service mesh | Infrastructure for service-to-service traffic: TLS, retries, observability via sidecar proxies. | [16-service-mesh.md](16-service-mesh.md) |
 
 ## Reliability
 
